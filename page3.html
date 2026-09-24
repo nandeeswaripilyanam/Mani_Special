@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Friendship❤️🫂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="friendshipMusic" autoplay loop>
+       <source src="friendship.mp3" type="audio/mpeg">
+    </audio>
+    <div class="floating-hearts">
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+    </div>
+    <div class="friendship-page">
+
+    <h1>What Makes Our Friendship Special ❤️</h1>
+
+    <p>It's not about being perfect. It's about being there. 🫶</p>
+
+    <img src="bestfriends.png" alt="Best friends" class="bestfriends-img">
+
+    <div class="friendship-card">
+        <h2>💙 Understanding</h2>
+        <p>
+            Even when misunderstandings happen,
+            we can talk, understand and move forward.
+        </p>
+    </div>
+
+    <div class="friendship-card">
+        <h2>😂 The Fun</h2>
+        <p>
+            The random conversations, teasing,
+            and silly moments make our friendship fun.
+        </p>
+    </div>
+
+    <div class="friendship-card">
+        <h2>🤝 Trust</h2>
+        <p>
+            Being able to say sorry, forgive,
+            and continue our friendship means a lot.
+        </p>
+    </div>
+
+    <h2>And honestly...</h2>
+
+    <p>
+        That's what makes our friendship special. 💙✨
+    </p>
+
+    <a href="page4.html">Next →</a>
+
+    </div>
+   <script>
+        const music = document.getElementById("friendshipMusic");
+
+        music.addEventListener("timeupdate", function () {
+            localStorage.setItem("musicTime", music.currentTime);
+        });
+
+        music.addEventListener("loadedmetadata", function () {
+           const savedTime = localStorage.getItem("musicTime");
+
+           if (savedTime) {
+            music.currentTime = parseFloat(savedTime);
+           }
+        });
+    </script>
+</body>
+</html>

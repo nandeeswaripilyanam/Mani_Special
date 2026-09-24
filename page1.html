@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Bestfriend Mani❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="friendshipMusic" autoplay loop>
+       <source src="friendship.mp3" type="audio/mpeg">
+    </audio>
+    <div class="floating-hearts">
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+    </div>
+    <div class="Welcome">
+        <h1>Hey Mani❤️👀</h1>
+
+        <p>I made something special for you...</p>
+
+        <a href="page2.html">Enter❤️</a>
+
+    </div>
+    <script>
+        const music = document.getElementById("friendshipMusic");
+
+        music.addEventListener("timeupdate", function () {
+            localStorage.setItem("musicTime", music.currentTime);
+        });
+
+        music.addEventListener("loadedmetadata", function () {
+           const savedTime = localStorage.getItem("musicTime");
+
+           if (savedTime) {
+            music.currentTime = parseFloat(savedTime);
+           }
+        });
+    </script>
+</body>
+</html>

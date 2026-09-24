@@ -1,0 +1,634 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+.welcome {
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+a {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: white;
+    color: #203a43;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.message-page {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.message-page h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.message-page p {
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.message-page h2 {
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+.friendship-page {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.friendship-page h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.friendship-page > p {
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+.friendship-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+    animation: cardAppear 1s ease-in-out;
+}
+
+.friendship-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.friendship-card h2 {
+    margin-bottom: 10px;
+}
+
+.friendship-card p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fun-page {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.fun-page h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+.fun-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+    animation: cardAppear 1s ease-in-out;
+}
+
+.fun-card:hover {
+    transform: rotate(-1deg) scale(1.03);
+}
+
+.fun-card h2 {
+    margin-bottom: 10px;
+}
+
+.fun-card p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.ending-line {
+    margin: 40px 0 30px;
+}
+.surprise-page {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.surprise-page h1 {
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.surprise-page > p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.surprise-box {
+    margin: 40px 0;
+    padding: 30px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    animation: surpriseAppear 1.5s ease-in-out;
+}
+
+.surprise-box h2 {
+    margin-bottom: 20px;
+}
+
+.surprise-box p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+@keyframes surpriseAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.final-page {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.heart {
+    font-size: 70px;
+    animation: heartbeat 1.5s infinite;
+}
+
+.final-page h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.final-page > p {
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.final-message {
+    margin: 40px 0;
+    padding: 30px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: finalAppear 2s ease-in-out;
+}
+
+.final-message h2 {
+    margin-bottom: 20px;
+}
+
+.final-message p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.forever {
+    margin-top: 40px;
+    font-size: 30px;
+    animation: glow 2s infinite alternate;
+}
+
+.signature {
+    margin-top: 35px;
+    font-style: italic;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes finalAppear {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
+}
+.bestfriends-img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    animation: pictureFloat 3s ease-in-out infinite;
+}
+
+@keyframes pictureFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+.page4-img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    animation: page4Float 3s ease-in-out infinite;
+}
+
+@keyframes page4Float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(1deg);
+    }
+}
+.page5-img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    animation: page5Float 3s ease-in-out infinite;
+}
+
+@keyframes page5Float {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-10px) scale(1.02);
+    }
+}
+.page6-img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 25px auto 35px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    animation: page6Float 4s ease-in-out infinite;
+}
+
+@keyframes page6Float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.floating-hearts {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.floating-hearts span {
+    position: absolute;
+    color: red;
+    font-size: 18px;
+    opacity: 0;
+    text-shadow:
+        0 0 5px red,
+        0 0 10px red,
+        0 0 18px red;
+    animation: heartSparkle 3s ease-in-out infinite;
+}
+
+.floating-hearts span:nth-child(1) {
+    left: 12%;
+    top: 25%;
+}
+
+.floating-hearts span:nth-child(2) {
+    left: 30%;
+    top: 70%;
+    animation-delay: 1s;
+}
+
+.floating-hearts span:nth-child(3) {
+    left: 52%;
+    top: 18%;
+    animation-delay: 2s;
+}
+
+.floating-hearts span:nth-child(4) {
+    left: 72%;
+    top: 55%;
+    animation-delay: 0.5s;
+}
+
+.floating-hearts span:nth-child(5) {
+    left: 88%;
+    top: 30%;
+    animation-delay: 1.5s;
+}
+
+@keyframes heartSparkle {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+}
+.show-surprise {
+    animation: surpriseReveal 1s ease-in-out;
+    transform: scale(1.05);
+}
+
+@keyframes surpriseReveal {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+.surprise-icon {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+}
+.surprise-box {
+    display: none;
+    margin: 40px 0;
+}
+
+.surprise-box.show-surprise {
+    display: block;
+    animation: surpriseReveal 1s ease-in-out;
+}
+.surprise-icon {
+    display: inline-block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    font-size: 80px;
+    margin: 25px 0;
+    animation: surpriseBounce 1.5s ease-in-out infinite;
+}
+.surprise-icon {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+.surprise-page {
+    position: relative;
+    z-index: 2;
+}
+
+.surprise-icon {
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+}
+.surprise-icon {
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto !important;
+    cursor: pointer;
+}
+
+.floating-hearts {
+    z-index: -1;
+}
+.surprise-box {
+    animation: surpriseReveal 0.8s ease-in-out;
+}
+
+@keyframes surpriseReveal {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.surprise-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.surprise-box {
+    max-width: 500px;
+    margin: 40px auto;
+}
+@media (min-width: 700px) {
+    .surprise-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 48%;
+        float: left;
+    }
+
+    .surprise-box {
+        width: 42%;
+        float: right;
+        margin-top: 25px;
+    }
+}
+.forever-message {
+    display: none;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 34px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    .message-page,
+    .friendship-page,
+    .fun-page,
+    .surprise-page,
+    .final-page {
+        width: 90%;
+        padding: 30px 10px;
+    }
+
+    .message-page h1,
+    .friendship-page h1,
+    .fun-page h1,
+    .surprise-page h1,
+    .final-page h1 {
+        font-size: 34px;
+    }
+
+    .bestfriends-img,
+    .page4-img,
+    .page5-img,
+    .page6-img {
+        width: 100%;
+    }
+
+    .friendship-card,
+    .fun-card,
+    .final-message,
+    .surprise-box {
+        padding: 20px;
+    }
+}
+a,
+.forever-button {
+    transition: all 0.3s ease;
+}
+
+a:hover,
+.forever-button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.25);
+}
+
+.forever-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    color: #203a43;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+h1 {
+    text-shadow:
+        0 0 8px rgba(255, 255, 255, 0.25),
+        0 0 18px rgba(120, 200, 255, 0.2);
+}
+.heart {
+    filter: drop-shadow(0 0 12px rgba(100, 200, 255, 0.7));
+}
+.floating-hearts span {
+    animation-duration: 4s;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Surprise 👀</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="friendshipMusic" autoplay loop>
+       <source src="friendship.mp3" type="audio/mpeg">
+    </audio>
+    <div class="floating-hearts">
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+    </div>
+
+    <div class="surprise-page">
+
+        <h1>Mani... 👀</h1>
+
+        <p>
+            You probably didn't expect me to make
+            an entire website for you. 😂
+        </p>
+
+        <p>
+            But I wanted to do something different
+            instead of just saying "sorry" again.
+        </p>
+
+        <button type="button" class="surprise-icon"
+              onclick="document.querySelector('.surprise-box').style.display='block';">
+                🎁
+        </button>
+
+        <img src="page5friends.png" alt="Best friends surprise" class="page5-img">
+
+        
+        </div>
+        <div class="surprise-box">
+
+            <h2>💙 One Thing I Want You To Know</h2>
+
+            <p>
+                No matter how many silly misunderstandings
+                we have, your place in my life matters to me.
+            </p>
+
+            <p>
+                Some friendships are worth choosing
+                again and again. 🫂
+            </p>
+
+            <a href="page6.html">One Last Thing... ❤️ →</a>
+
+        </div>
+    <script>
+        const music = document.getElementById("friendshipMusic");
+
+        music.addEventListener("timeupdate", function () {
+            localStorage.setItem("musicTime", music.currentTime);
+        });
+
+        music.addEventListener("loadedmetadata", function () {
+           const savedTime = localStorage.getItem("musicTime");
+
+           if (savedTime) {
+            music.currentTime = parseFloat(savedTime);
+           }
+        });
+    </script>
+    <script>
+        function showSurprise() {
+            document.querySelector(".surprise-box").style.display = "block";
+        }
+    </script>
+</body>
+</html>

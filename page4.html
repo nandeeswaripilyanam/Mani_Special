@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Crazy Friendship 😂</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="friendshipMusic" autoplay loop>
+       <source src="friendship.mp3" type="audio/mpeg">
+    </audio>
+    <div class="floating-hearts">
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+    </div>
+
+    <div class="fun-page">
+
+        <h1>Okay... Enough Emotional Stuff 😂</h1>
+
+        <p class="subtitle">
+            Let's talk about the real reason our friendship is special 👀
+        </p>
+
+        <img src="page4friends.png" alt="Best friends high-fiving" class="page4-img">
+
+        <div class="fun-card">
+            <h2>😂 Random Conversations</h2>
+            <p>
+                Somehow our conversations can start normally
+                and end up completely random.
+            </p>
+        </div>
+
+        <div class="fun-card">
+            <h2>🙄 Annoying Each Other</h2>
+            <p>
+                Teasing each other is basically
+                part of the friendship package.
+            </p>
+        </div>
+
+        <div class="fun-card">
+            <h2>🤦‍♀️ The "What Are We Doing?" Moments</h2>
+            <p>
+                Sometimes even we don't understand
+                how we reached that conversation. 😂
+            </p>
+        </div>
+
+        <h2 class="ending-line">
+            But honestly... I wouldn't change it. 💙
+        </h2>
+
+        <a href="page5.html">There's More 👀 →</a>
+
+    </div>
+     <script>
+        const music = document.getElementById("friendshipMusic");
+
+        music.addEventListener("timeupdate", function () {
+            localStorage.setItem("musicTime", music.currentTime);
+        });
+
+        music.addEventListener("loadedmetadata", function () {
+           const savedTime = localStorage.getItem("musicTime");
+
+           if (savedTime) {
+            music.currentTime = parseFloat(savedTime);
+           }
+        });
+    </script>
+</body>
+</html>

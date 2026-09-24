@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You, Mani❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="friendshipMusic" autoplay loop>
+       <source src="friendship.mp3" type="audio/mpeg">
+    </audio>
+    <div class="floating-hearts">
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+    </div>
+
+    <div class="final-page">
+
+        <div class="heart">❤️</div>
+
+        <img src="page6friends.png" alt="Best friends" class="page6-img">
+
+        <h1>Thank You, Mani</h1>
+
+        <p>
+            Thank you for understanding me.
+        </p>
+
+        <p>
+            Thank you for forgiving me.
+        </p>
+
+        <p>
+            And most importantly...
+            thank you for being my bestfriend. 🫂
+        </p>
+
+        <div class="final-message">
+
+            <h2>Some friendships are truly special. ✨</h2>
+
+            <p>
+                I hope ours stays that way —
+                through the silly moments,
+                the arguments, the laughter,
+                and everything in between.
+            </p>
+
+        </div>
+
+        <h2 class="forever">Bestfriends? 🤝❤️💙</h2>
+        <button class="forever-button" onclick="showForeverMessage()">
+             Tap here 💙
+        </button>
+
+        <p id="foreverMessage" class="forever-message">
+            No matter where life takes us, I'll always be grateful for our friendship. 🫂💙
+        </p>
+
+        <p class="signature">
+            — From someone who is really glad to have you in her life. 💙
+        </p>
+
+    </div>
+    <script>
+        const music = document.getElementById("friendshipMusic");
+
+        music.addEventListener("timeupdate", function () {
+            localStorage.setItem("musicTime", music.currentTime);
+        });
+
+        music.addEventListener("loadedmetadata", function () {
+           const savedTime = localStorage.getItem("musicTime");
+
+           if (savedTime) {
+            music.currentTime = parseFloat(savedTime);
+           }
+        });
+    </script>
+    <script>
+       function showForeverMessage() {
+          document.getElementById("foreverMessage").style.display = "block";
+       }
+    </script>
+</body>
+</html>

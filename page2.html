@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message For Mani😍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="friendshipMusic" autoplay loop>
+       <source src="friendship.mp3" type="audio/mpeg">
+    </audio>
+    <div class="floating-hearts">
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+      <span>❤️</span>
+    </div>
+    <div class="message-page">
+
+    <h1>To My Bestfriend 🫶</h1>
+
+    <p>
+        Mani, I know sometimes I make mistakes,
+        and I know I hurt you before.
+    </p>
+
+    <p>
+        But I'm genuinely thankful that you understood me
+        and accepted my apology. 💙
+    </p>
+
+    <p>
+        I don't want one misunderstanding to change
+        a friendship that means so much to me.
+    </p>
+
+    <h2>Thank you for still being my bestfriend. 🫂</h2>
+
+    <a href="page3.html">Next →</a>
+
+    </div>
+    <script>
+        const music = document.getElementById("friendshipMusic");
+
+        music.addEventListener("timeupdate", function () {
+            localStorage.setItem("musicTime", music.currentTime);
+        });
+
+        music.addEventListener("loadedmetadata", function () {
+           const savedTime = localStorage.getItem("musicTime");
+
+           if (savedTime) {
+            music.currentTime = parseFloat(savedTime);
+           }
+        });
+    </script>
+</body>
+</html>
