@@ -1,4 +1,4 @@
-# Mani_Special ♥️
+# Mani_Special 💙
 
 A heartfelt friendship website created for my best friend Mani.
 
